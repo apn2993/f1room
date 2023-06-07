@@ -1,0 +1,30 @@
+version: '3'
+services:
+  f1room:
+    image: apn2993/f1roomrepo:latest
+    ports:
+      - "80:80"
+    volumes:
+      - "f1roomvol"
+
+  f2room:
+    image: apn2993/f2roomrepo:latest
+    ports:
+      - "81:80"
+    volumes:
+      - "f2roomvol"
+
+
+  f3room:
+    image: apn2993/f3roomrepo:latest
+    ports:
+      - "82:80"
+    volumes:
+      - "f3roomvol"
+
+  f4room:
+    image: apn2993/f4roomrepo:latest
+    ports:
+      - "83:80"
+    volumes:
+      - "f4roomvol"
